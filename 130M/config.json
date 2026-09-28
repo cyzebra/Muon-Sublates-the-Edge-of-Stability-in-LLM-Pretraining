@@ -1,0 +1,56 @@
+{
+  "models": [
+    "130M"
+  ],
+  "data_dir": "./data/fineweb_gpt2",
+  "output_dir": "./runs",
+  "train_batch_sizes_by_model": {
+    "130M": 32
+  },
+  "tokens_per_parameter": 40,
+  "train_steps": null,
+  "sequence_length": 4096,
+  "micro_batch_size": 2,
+  "dataset_name": "HuggingFaceFW/fineweb",
+  "dataset_config": "sample-10BT",
+  "dataset_split": "train",
+  "text_field": "text",
+  "token_dtype": "uint16",
+  "vocab_size": 50304,
+  "train_file": null,
+  "val_file": null,
+  "seeds": [
+    1337
+  ],
+  "optimizer": "all_adamw",
+  "muon_lrs": {
+    "130M": 0.08
+  },
+  "adam_lrs": {
+    "130M": 0.0003
+  },
+  "adam_betas": [
+    0.9,
+    0.95
+  ],
+  "adam_eps": 1e-08,
+  "adam_weight_decay": 0.1,
+  "adam_matrix_weight_decay": 0,
+  "grad_clip_norm": 1.0,
+  "activation_checkpointing": false,
+  "loss_chunk_tokens": 256,
+  "ns_dtype": "float32",
+  "ns_eps": 1e-07,
+  "schedule": "wsd",
+  "warmup_steps": null,
+  "decay_steps": null,
+  "warmup_fraction": 0.05,
+  "decay_fraction": 0.2,
+  "final_lr_fraction": 0.1,
+  "checkpoint_every": 100,
+  "train_precision": "bf16",
+  "data_seed": 2026,
+  "train_aux": true,
+  "prepare_train_tokens": 6000000000,
+  "prepare_val_tokens": 16777216
+}

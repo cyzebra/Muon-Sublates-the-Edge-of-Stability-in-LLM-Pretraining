@@ -1,0 +1,82 @@
+{
+  "MODELS": [
+    "mlp",
+    "cnn",
+    "transformer"
+  ],
+  "LEARNING_RATES": [
+    0.007
+  ],
+  "TRAIN_SEEDS": [
+    0
+  ],
+  "DATA_SEED": 0,
+  "BATCH_SEED": 17,
+  "BATCHES": {
+    "mlp": [
+      1,
+      64,
+      128,
+      256,
+      512,
+      4096,
+      "full"
+    ],
+    "cnn": [
+      1,
+      64,
+      128,
+      256,
+      512,
+      4096,
+      "full"
+    ],
+    "transformer": [
+      1,
+      16,
+      32,
+      64,
+      128,
+      512,
+      "full"
+    ]
+  },
+  "STEPS": 1500,
+  "MICROBATCH": {
+    "mlp": 1000,
+    "cnn": 256,
+    "transformer": 64
+  },
+  "CIFAR_SOURCE": null,
+  "TEXT_SOURCE": null,
+  "CIFAR_N": 50000,
+  "TEXT_N": 2048,
+  "BLOCK_SIZE": 64,
+  "DTYPE": "float32",
+  "CKPT_EVERY": 25,
+  "RUN_BATCHES": {
+    "mlp": [
+      1,
+      64,
+      128,
+      256,
+      512,
+      4096,
+      "full"
+    ],
+    "cnn": [
+      1,
+      64,
+      512,
+      4096,
+      "full"
+    ],
+    "transformer": [
+      1,
+      16,
+      128,
+      512,
+      "full"
+    ]
+  }
+}

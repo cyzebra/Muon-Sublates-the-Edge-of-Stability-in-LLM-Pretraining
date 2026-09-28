@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated datasets, checkpoints, and experiment outputs
+*.bin
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+runs/
+wandb/
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
